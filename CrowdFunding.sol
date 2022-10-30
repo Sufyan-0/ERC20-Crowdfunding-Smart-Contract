@@ -36,7 +36,7 @@ contract CrowdFunding{
     function creater(uint _goal)public{
       require(_goal > 0 , "Goal is not Equal to Zero");
       CampignCount++;
-      Creaters[CampignCount] = Creater(msg.sender , CampignCount , _goal , 0 ,block.timestamp , block.timestamp + 4,false);
+      Creaters[CampignCount] = Creater(msg.sender , CampignCount , _goal , 0 ,block.timestamp , block.timestamp + 10 ,false);
     }
 
 // Donateing Money
